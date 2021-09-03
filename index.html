@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando Grid</title>
+
+    <style>
+        h1 {
+            margin: 0;
+        }
+
+        .servicios {
+            border: 2px solid black;
+            color: white;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 50% 25% 25%;
+            grid-template-rows: 25% 25% 25% 25%;
+            height: 200px;
+        }
+
+        .servicio-1 {
+            /* grid-column-start: 2;
+            grid-column-end: 4; */
+
+            /* grid-column-start: 1;
+            grid-column-end: 2; */
+
+            /* grid-row-start: 1;
+            grid-row-end: 3; */
+
+            /* grid-column: 1 / 2;
+            grid-row:  1 / span 4; */  /* span rellena las filas */
+
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+
+            background: darkcyan;
+        }
+
+        .servicio-2 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background: darkmagenta;
+        }
+
+        .servicio-3 {
+
+            grid-column-start: 2;
+            grid-column-end: 4;
+            background: firebrick;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="servicios">
+        <div class="servicio servicio-1">
+            <h1>Servicio 1</h1>
+        </div>
+        <div class="servicio servicio-2">
+            <h1>Servicio 2</h1>
+        </div>
+        <div class="servicio servicio-3">
+            <h1>Servicio 3</h1>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
